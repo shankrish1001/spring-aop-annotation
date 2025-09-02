@@ -1,7 +1,10 @@
 package com.shankrish;
 
+import java.util.logging.Logger;
+
 public class MyService {
+	private static final Logger logger = Logger.getLogger(MyService.class.getName());
     public void doSomething() {
-        System.out.println("Executing doSomething() method");
+        logger.info("Executing doSomething() method");
     }
 }
